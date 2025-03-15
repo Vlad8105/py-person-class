@@ -37,4 +37,10 @@ def create_person_list(people: list) -> list:
                 else:
                     person.husband = spouse
 
+    for person in person_list:
+        if person.wife is None:
+            del person.wife
+        if person.husband is None:
+            del person.husband
+
     return person_list
