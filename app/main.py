@@ -14,6 +14,7 @@ class Person:
                 f"wife={self.wife.name if self.wife else None}, "
                 f"husband={self.husband.name if self.husband else None})")
 
+
 def create_person_list(people: list) -> list:
     person_list = []
 
